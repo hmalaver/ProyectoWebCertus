@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+    <!-- fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contactos</title>
+
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- INICIO DE WHATSAPP ESTATICO -->
+    <a href=""><i class="fa-brands fa-whatsapp icono"></i></a>
+
+    <!-- FIN NDE WHATSAPP -->
+    <br />
+
+    <!-- INICIO DE MENÚ DE NAVEGACIÓN -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Logo.svg" alt="" class="img-fluid img-logo">
+                </a>
+                <a href="#" class="btn-menu" id="btn-menu">
+                    <i class="fa-solid fa-bars icono-menu"></i>
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+                    <!-- <i class="fa-solid fa-bars-staggered"></i> -->
+                </a>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <a href="index.html">INICIO</a>
+                <a href="cursos.html">CURSOS</a>
+                <a href="servicios.html">SERVICIOS</a>
+                <a href="contactos.html">CONTACTOS</a>
+                <a href="matricula.html">MATRICULA</a>
+                <a href="#">LOGIN</a>
+            </div>
+        </nav>
+    </header>
+    <!-- FIN DE MENÚ DE NAVEGACIÓN -->
+    <br>
+    <br>
+    <article class="container">
+        <form action="enviar.php" method="post">
+            <section class="row">
+                <section class="col-xs-12 col-sm-12 col-md-6">
+                    <img src="img/contacto.jpg" alt="" class="img-fluid" />
+                </section>
+                <section class="col-xs-12 col-sm-12 col-md-6">
+                    <label>Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Ingrese su nombre"
+                        required />
+
+                    <label>Correo: </label>
+                    <input type="email" id="correo" name="correo" maxlength="30" placeholder="Ingrese su correo"
+                        required pattern="+@" />
+
+                    <label>Celular:</label>
+                    <input type="cel" id="celular" name="celular" maxlength="9"
+                        placeholder="Ingrese su teléfono y/o celular" required />
+
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <input type="submit" class="boton-contacto" />
+                </section>
+            </section>
+        </form>
+    </article>
+
+    <!-- inicio de footer -->
+    <footer>
+        <article class="pie-pagina">
+            <section class="container">
+                <section class="row footer">
+                    <section class="col-xs-12 col-sm-12 col-md-1">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </section>
+
+                    <section class="col-xs-12 col-sm-12 col-md-3">
+                        <h3 class="subtitulos">Contacto</h3>
+                        <p class="info-footer">+51 974 566 218</p>
+                        <p class="info-footer">+51 974 566 218 (Whatsapp)</p>
+                    </section>
+
+                    <section class="col-xs-12 col-sm-12 col-md-1">
+                        <i class="fa-solid fa-envelope email"></i>
+                    </section>
+
+                    <section class="col-xs-112 col-sm-12 col-md-3">
+                        <h3 class="subtitulos">E-Mail</h3>
+                        <p class="info-footer">heltonmalaver@gmail.com</p>
+                    </section>
+
+                    <section class="col-xs-112 col-sm-12 col-md-1">
+                        <i class="fa-solid fa-location-dot ubicacion"></i>
+                    </section>
+
+                    <section class="col-xs-12 col-sm-121 col-md-3">
+                        <h3 class="subtitulos">Dirección</h3>
+                        <p class="info-footer">Lima-Perú</p>
+                    </section>
+                </section>
+
+            </section>
+        </article>
+        <article class="derechos">
+            <section class="row footer">
+                <section class="col-xs-12 col-sm-12 col-md-6">
+                    <p class="devlab">
+                        DEVLAD SOLUCIONES INFORMÁTICAS SAC ©2023 - Todos los derchos
+                        reservados
+                    </p>
+                </section>
+
+                <section class="col-xs-12 col-sm-12 col-md-6">
+                    <p class="desarrollador">Desarrollado por <span class="autor">Helton Junior M.</span></p>
+                </section>
+            </section>
+        </article>
+    </footer>
+    <!-- FIN DE FOOTER -->
+
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu-flex.js"></script>
+
+    <!-- js de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+    <!-- fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/matricula.css" />
+    <title>Matricula</title>
+
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- INICIO DE MENÚ DE NAVEGACIÓN -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Logo.svg" alt="" class="img-fluid img-logo">
+                </a>
+                <a href="#" class="btn-menu" id="btn-menu">
+                    <i class="fa-solid fa-bars icono-menu"></i>
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+                    <!-- <i class="fa-solid fa-bars-staggered"></i> -->
+                </a>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <a href="index.html">INICIO</a>
+                <a href="cursos.html">CURSOS</a>
+                <a href="servicios.html">SERVICIOS</a>
+                <a href="contactos.html">CONTACTOS</a>
+                <a href="matricula.html">MATRICULA</a>
+                <a href="#">LOGIN</a>
+            </div>
+        </nav>
+    </header>
+    <!-- FIN DE MENÚ DE NAVEGACIÓN -->
+    <br>
+    <br>
+    <br>
+
+    <!-- INICIO DE MATRICULA -->
+    <article class="container">
+        <form action="matricula.php" method="post">
+            <section class="row">
+                <section class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="titulo-matricula">
+                        <h1 class="matricula-gratis">¡Matrícula Gratis!</h1>
+                    </div>
+                    <h3 class="solicita">Solicita más información aquí</h3>
+                    <input type="text" id="nombres" name="nombres" maxlength="30" placeholder="Nombres" required />
+                    <input type="text" id="apellidos" name="apellidos" maxlength="30" placeholder="Apellidos"
+                        required />
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required
+                        pattern="+@" />
+                    <input type="tel" id="celular" name="celular" maxlength="9" placeholder="Teléfono / celular"
+                        required />
+                    <div class="condiciones">
+                        <input type="checkbox" id="aceptar" class="aceptar" />
+                        <label for="aceptar" class="acepto">Acepto haber leído las<u>políticas de privacidad</u> y los
+                            <u>términos y condiciones</u></label>
+                    </div>
+
+                    <div class="boton">
+                        <button class="btn-solicitar">Solicitar</button>
+                        <!-- <input type="text" value="Solicitar" class="btn-solicitar"> -->
+                    </div>
+
+
+                </section>
+            </section>
+        </form>
+    </article>
+    <!-- FIN DE MATRICULA -->
+
+    <!-- inicio de footer -->
+    <footer>
+        <article class="pie-pagina">
+            <section class="container-footer">
+                <section class="row footer">
+                    <section class="col-xs-12 col-sm-12 col-md-1">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </section>
+
+                    <section class="col-xs-12 col-sm-12 col-md-3">
+                        <h3 class="subtitulos">Contacto</h3>
+                        <p class="info-footer">+51 974 566 218</p>
+                        <p class="info-footer">+51 974 566 218 (Whatsapp)</p>
+                    </section>
+
+                    <section class="col-xs-12 col-sm-12 col-md-1">
+                        <i class="fa-solid fa-envelope email"></i>
+                    </section>
+
+                    <section class="col-xs-112 col-sm-12 col-md-3">
+                        <h3 class="subtitulos">E-Mail</h3>
+                        <p class="info-footer">heltonmalaver@gmail.com</p>
+                    </section>
+
+                    <section class="col-xs-112 col-sm-12 col-md-1">
+                        <i class="fa-solid fa-location-dot ubicacion"></i>
+                    </section>
+
+                    <section class="col-xs-12 col-sm-121 col-md-3">
+                        <h3 class="subtitulos">Dirección</h3>
+                        <p class="info-footer">Lima-Perú</p>
+                    </section>
+                </section>
+
+            </section>
+        </article>
+        <article class="derechos">
+            <section class="row footer">
+                <section class="col-xs-12 col-sm-12 col-md-6">
+                    <p class="devlab">
+                        DEVLAD SOLUCIONES INFORMÁTICAS SAC ©2023 - Todos los derchos
+                        reservados
+                    </p>
+                </section>
+
+                <section class="col-xs-12 col-sm-12 col-md-6">
+                    <p class="desarrollador">Desarrollado por <span class="autor">Helton Junior M.</span></p>
+                </section>
+            </section>
+        </article>
+    </footer>
+    <!-- FIN DE FOOTER -->
+
+
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu-flex.js"></script>
+
+    <!-- js de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

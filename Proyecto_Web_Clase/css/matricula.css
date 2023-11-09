@@ -1,0 +1,214 @@
+:root{
+    --color-sombras: #282D31;
+    --color-primario: #EC111A;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    width: 35%;
+}
+
+form{
+    border: .7em solid rgb(216, 213, 213);
+}
+
+
+label{
+    font-family: 'Roboto';
+    font-size: 1.2em;
+}
+
+input{
+    width: 100%;
+    padding: .4em;
+    margin-bottom: 1em;
+    border: 1px solid rgb(32, 144, 249);
+    border-radius: 5px;
+}
+input:focus, textarea:focus{
+    border-color: rgb(115, 187, 207);
+    box-shadow: 0 0 5px rgb(83, 206, 233);
+    outline: 0 none;
+}
+
+/* INICIO DE MENU */
+header{
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 5px 10px var(--color-sombras);
+}
+
+.menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo{
+    height: 4em;
+}
+
+.btn-menu{
+    display: none;  
+}
+
+.enlaces{
+    text-align: right;
+}
+
+.enlaces a{
+    color: var(--color-titulos);
+    text-decoration: none;
+    font-weight: bold;
+    padding: .8em;
+    font-family: 'Roboto';
+}
+
+@media (max-width: 1023px) {
+    .menu{
+        flex-direction: column;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn-menu{
+        display: block;
+        color: black;
+        font-size: 2em;
+        z-index: 200000;
+    }
+
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icono-menu{
+        color: #EC111A;
+    }
+}
+
+/* FIN DE MENU */
+
+
+/* INICIO DE MATRICULA */
+.titulo-matricula{
+    background-color: rgb(252, 209, 17);
+    padding: 2em;
+    border-top-right-radius: .8em;
+    border-top-left-radius: .8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.matricula-gratis{
+    font-weight: bold;
+}
+
+.solicita{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    font-weight: bold;
+}
+
+.btn-solicitar{
+    background-color: black;
+    color: #fff;
+    width: 70%;
+    height: 3.5em;
+    border-radius: .7em;
+    border: none;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.condiciones{
+    display: flex;
+}
+
+.aceptar {
+    float: left;
+    width: 1.5em;
+    margin-right: 1em;
+    border: none;
+}
+/* FIN DE MATRICULA */
+
+
+/* INICIO DE FOOTER */
+
+.pie-pagina{
+    background-color: black;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    color: #fff;
+    font-size: 1.8em;
+    
+}
+
+.subtitulos{
+    color: #fff;
+}
+
+.info-footer{
+    color: #fff;
+}
+.container-footer{
+    padding: 2em;
+    padding-left: 5em;
+}
+
+
+.derechos{
+    background-color: rgb(35, 34, 34);
+
+}
+
+.devlab{
+    padding-left: 5em;
+    color: #fff;
+}
+
+.desarrollador{
+    padding-left: 15em;
+    color: #fff;
+}
+
+.autor{
+    color: var(--color-primario);
+}
+
+/* FIN DE FOOTER */
